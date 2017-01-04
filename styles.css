@@ -1,0 +1,30 @@
+body { height: 100vh; background: #333; }
+
+.container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#game {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+}
+
+.space {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 4em;
+  font-family: Helvetica;
+  font-weight: bold;
+  height: 150px;
+  width: 150px;
+  background: #eee;
+  margin: 5px;
+}
