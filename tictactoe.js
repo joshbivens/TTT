@@ -12,14 +12,14 @@ spaces.map(space => space.addEventListener('click', setSide));
 
 function setSide() {
   this.innerHTML = "X";
-  console.log(this)
+  // Access data- property: this.dataset.index
+  spacesData[this.dataset.index].push("X");
+  console.log(spacesData);
+  
 }
 
-// For later: think about the relationship between the spacesData array and the spaces that came from it.
-// How will we, when you click on a space, add a 'true' or 'X' to the corresponding subarray in spacesData?
-
-function checkSpaces() {
-  for(let i = 0; i < spacesData.length; i++) {
-    // ??? We need to figure out setSide first!
-  }
-}
+// function checkSpaces() {
+//   for(let i = 0; i < spacesData.length; i++) {
+    
+//   }
+// }
